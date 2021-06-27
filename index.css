@@ -1,0 +1,221 @@
+
+body{
+    padding: 0;
+    margin: 0;
+      box-sizing: border-box;
+     
+      
+  }
+      
+  .navbar{
+    overflow: hidden;
+    background-color:rgb(250, 10, 10);
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  .navbar a{
+    float: left;
+    font-size: 21px;
+    color:white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none; 
+    width: 10%;
+    
+  }
+  .navbar a:hover {
+    background-color:gray;
+    color: rgb(0, 0, 0);
+    
+    
+    
+  }
+  .show{
+    display: block;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 116, 116);
+    
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(247, 249, 250);
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(235, 57, 57, 0.9);
+    transition-duration: 1s;
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 2.5rem;
+  }
+
+
+
+
+
+
+
+
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    margin-top: 1em;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .play-area {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
+  }
+  
+  .block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid black;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .block:hover {
+    cursor: pointer;
+    background: #0ff30f;
+  }
+  
+  .occupied:hover {
+    background: #ff3a3a;
+  }
+  
+  .win {
+    background: #0ff30f;
+  }
+  
+  .win:hover {
+    background: #0ff30f;
+  }
+  
+  #block_0,
+  #block_1,
+  #block_2 {
+    border-top: none;
+  }
+  
+  #block_0,
+  #block_3,
+  #block_6 {
+    border-left: none;
+  }
+  
+  #block_6,
+  #block_7,
+  #block_8 {
+    border-bottom: none;
+  }
+  
+  #block_2,
+  #block_5,
+  #block_8 {
+    border-right: none;
+  }
+  
+  button {
+    outline: none;
+    border: 4px solid green;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: green;
+    color: white;
+  }
+  
+  .playerWin {
+    color: green;
+  }
+  
+  .computerWin {
+    color: red;
+  }
+  
+  .draw {
+    color: orangered;
+  }
+ 
+  
